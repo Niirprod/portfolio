@@ -1,5 +1,5 @@
 *{
-	scroll-behavior: auto;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -12,16 +12,16 @@ body {
 
 header {
 	height: 100vh;
-	background-image: url('../img/ruines1.png');
+	background-image: url('../img/sekiro2f.png');
 	background-size: cover;	
 }
 
-#back {
+/*#back {
 	height: 100vh;
 	background-color: #1B1464;
-	opacity: 0.2;
+	opacity: 0.3;
 	
-}
+}*/
 
 /*
 font-family: 'Turret Road', cursive;
@@ -45,7 +45,8 @@ font-family: 'Calligraffitti', cursive;
 	height: 10vh;
 	position: fixed;
 	top: 0;
-	background-color: #2c3e50;
+	background: linear-gradient(to right, #6D468F, #3B73A7);
+	/*background-color: #2c3e50;*/
 	box-shadow: 0vh 0vh rgba(0, 0, 0, 0.2),
 				0vh 0.3vh 0vh 0.2vh rgba(255, 255, 255, 0.5) inset,
 				0vh -0.8vh 0vh 0.3vh rgba(0, 0, 0, 0.1) inset;
@@ -121,34 +122,27 @@ i#logo:hover {
 
 /* Title and name*/
 
-.top {
-	height: 100vh;
-	
-}
 
 #dwj {
+	margin-top: -58vh;
 	font-size: 4vh;
 	font-family: 'Orbitron', serif;
-	color: #FFFFFF;
+	color: #E42218;
 	text-align: center;
-	margin-top: -58vh;
 	text-shadow: 0 0.5vh rgba(255, 255, 255, 0.2);
 	
 }
 
 #nd {
+	margin-top: -20vh;
 	font-size: 8vh;
 	font-family: 'Orbitron', serif;
-	color: #FFFFFF;	
-	margin-top: -20vh;
+	color: #E42218;	
 	text-shadow: 0 0.5vh rgba(255, 255, 255, 0.2);
 }
 
 
-
-
 h2 {
-
 	font-size: 5vh;
 	font-family: 'Orbitron', serif;
 	color: #F9A997;
@@ -157,13 +151,36 @@ h2 {
 
 }
 
+#propo {
+
+	margin-top: 70vh;
+	margin-bottom: 35vh;
+	height: 10vh;
+	width: 100%;
+	
+}
+
+.par{
+	width: 100%;
+	display: flex;
+}
+
+#pres{
+	width: 50%;
+	font-size: 3vh;
+}
+
+
+
 /* Competence section */
 
 /* Background competence */
 
-#comp {
-	height: 90vh;
-	background: linear-gradient(#B98595, #1B1464);
+#tech {
+	width: 100%;
+	height: 75vh;
+	/*background-image: url('../img/ruines1.png');*/
+	/*background: linear-gradient(#B98595, #1B1464);*/
 }
 
 /* h3 title section*/
@@ -173,79 +190,91 @@ h2 {
 
 }
 
-#fronti {
+.tech_ti {
 	width: 50%;
 	text-align: center;
 	font-size: 4vh;
-	border: 2px solid blue;
-	color: #FFFFFF;
+	color: #1A1A1A;
+	/*border: 2px solid blue;*/
+	
 }
 
-#backti {
-	width: 50%;
-	text-align: center;
-	font-size: 4vh;
-	border: 2px solid yellow;
-	color: #38E138;
 
-}
-
-/* icone competences section */
+/* icone / competences / section */
 .si{
 	width: 100%;
 	display: flex;
 	text-align: center;
+	/*border: 2px solid green;*/
 	
 }
 
-.front  {
+/* div tech */
+
+.tech_ico  {
 	width: 50%;
-	border: 2px solid green;
+	display: flex;
+	/*border: 2px solid yellow;*/
 	
 }
 
-.back {
-	width: 50%;
-	border: 2px solid blue;
-}
 
+/* all icons */
 
 .ico {
-	margin-left: 3vh;
-	font-size: 15vh;
-	color: #F9A997;	
+	font-size: 13vh;	
 }
 
-#html:hover{
+/* ico front end */
+#html{
 	color: #E74A05;
 }
-#css:hover{
+#css{
 	color: #1286CB;
 }
-#js:hover{
+#js{
 	color: #FFC800;
 }
-#php:hover{
+
+
+/* ico back end */
+#php{
 	color: #6807FF;
 }
-#sf:hover{
+
+#mysql{
+	color: #5B4B4B;
+}
+
+
+
+/* ico cms / framework */
+
+#wp{
+	color: #2FAABF;
+
+}
+
+#sf{
 	color: #1A1A1A;
 }
 
-#cms {
-	width: 50%;
-	text-align: center;
-	font-size: 4vh;
-	border: 2px solid purple;
-	color: #FFFFFF;
 
-}
+/* ico others */
 
-.wpti{
-	width: 50%;
-}
-
-#wp:hover{
+.othi {
+	width: 13vh;
 	
-	color: #2FAABF;
 }
+
+figure {
+  display: table;
+}
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+  font-size: 2vh;
+}
+
+
+
